@@ -2,9 +2,30 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/", "destination": "/seo-ecommerce" }
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "lp-clinicas.agmiz.com"
+        }
+      ],
+      "destination": "/clinicas"
+    },
+    {
+      "source": "/",
+      "destination": "/seo-ecommerce"
+    }
   ],
   "headers": [
-    { "source": "/(.*)", "headers": [ { "key": "X-Robots-Tag", "value": "noindex, follow" } ] }
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, follow"
+        }
+      ]
+    }
   ]
 }
