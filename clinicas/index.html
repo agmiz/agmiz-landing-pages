@@ -109,6 +109,8 @@ h2{font-size:clamp(26px,3.4vw,38px);font-weight:800;margin-bottom:28px}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
 @keyframes onda{from{transform:translateX(0)}to{transform:translateX(-160px)}}
 @media (prefers-reduced-motion:reduce){.ice .bob,.ice .onda{animation:none}}
+.ice-leg{padding:14px 18px;font-size:13.5px;line-height:1.6;color:var(--suave);border-top:2px solid var(--linha);background:var(--card)}
+.ice-leg b{color:var(--laranja-texto)}
 .comp .nos{background:var(--laranja-claro);color:var(--texto);font-weight:600}
 .comp thead .nos{color:var(--laranja-texto)}
 .cta-band{text-align:center;margin-top:36px}
@@ -322,37 +324,22 @@ footer{padding:26px 0 100px;text-align:center;font-size:13.5px;color:var(--suave
     <div>
       <p class="kicker">O iceberg da busca</p>
       <h2>O que o paciente vê é só a ponta</h2>
-      <p class="lead2">Aparecer no Google, no Maps e no ChatGPT depende do que está embaixo d’água: a parte que quase ninguém cuida, e é onde a Ágmiz trabalha.</p>
+      <p class="lead2">Aparecer no Google, no Maps e no ChatGPT depende do que está embaixo d’água: a parte que quase ninguém cuida, e é onde a Ágmiz trabalha. Cada camada tem um nome técnico, mas um só objetivo: o paciente encontrar, confiar e marcar.</p>
     </div>
-    <figure class="ice" aria-label="Iceberg: acima da água, posição no Google e perfil no Maps; abaixo, avaliações, páginas de tratamento, dados iguais em todo lugar, o que a IA responde sobre a clínica e a saúde técnica do site">
-      <svg viewBox="0 0 760 560" role="img" aria-hidden="true">
-        <defs>
-          <linearGradient id="agua" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DBEAFE"/><stop offset="1" stop-color="#93C5FD"/></linearGradient>
-        </defs>
-        <rect x="0" y="160" width="760" height="400" fill="url(#agua)"/>
+    <figure class="ice" aria-label="Iceberg da busca: acima da água, o que o paciente vê (posição no Google, perfil no Maps, recomendação no ChatGPT e resposta direta do Google); abaixo, o que sustenta (avaliações e menções, dados iguais em todo lugar, velocidade e indexação, páginas de tratamento, reputação nas IAs e caminho até agendar)">
+      <svg viewBox="0 0 760 600" role="img" aria-hidden="true">
+        <defs><linearGradient id="agua" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DBEAFE"/><stop offset="1" stop-color="#93C5FD"/></linearGradient></defs>
+        <rect x="0" y="210" width="760" height="390" fill="url(#agua)"/>
         <g class="bob">
-          <path d="M320 160 L360 70 L385 100 L410 50 L450 160 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="2.5" stroke-linejoin="round"/>
-          <path d="M320 160 L450 160 L500 260 L480 400 L410 510 L340 490 L280 380 L270 260 Z" fill="#EFF6FF" fill-opacity=".9" stroke="#1E3A8A" stroke-width="2.5" stroke-linejoin="round"/>
-          <g stroke="#475569" stroke-width="1.5">
-            <line x1="214" y1="94" x2="352" y2="100"/><line x1="526" y1="94" x2="418" y2="92"/>
-            <line x1="214" y1="210" x2="292" y2="215"/><line x1="224" y1="330" x2="276" y2="330"/><line x1="212" y1="455" x2="318" y2="450"/>
-            <line x1="487" y1="235" x2="524" y2="230"/><line x1="487" y1="350" x2="524" y2="350"/>
-          </g>
-          <g fill="#C2410C"><circle cx="352" cy="100" r="6"/><circle cx="418" cy="92" r="6"/><circle cx="292" cy="215" r="6"/><circle cx="276" cy="330" r="6"/><circle cx="318" cy="450" r="6"/><circle cx="487" cy="235" r="6"/><circle cx="487" cy="350" r="6"/></g>
+          <path d="M310 210 L350 100 L380 135 L410 70 L455 210 Z" fill="#FFFFFF" stroke="#0F172A" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M310 210 L455 210 L505 310 L485 450 L410 560 L335 540 L275 430 L265 310 Z" fill="#EFF6FF" fill-opacity=".9" stroke="#1E3A8A" stroke-width="2.5" stroke-linejoin="round"/>
+          <g stroke="#475569" stroke-width="1.5"><line x1="200" y1="124" x2="339" y2="130"/><line x1="170" y1="179" x2="321" y2="180"/><line x1="515" y1="118" x2="423" y2="110"/><line x1="515" y1="173" x2="442" y2="170"/><line x1="215" y1="289" x2="276" y2="285"/><line x1="250" y1="384" x2="271" y2="380"/><line x1="244" y1="494" x2="308" y2="490"/><line x1="525" y1="289" x2="490" y2="280"/><line x1="525" y1="394" x2="494" y2="385"/><line x1="525" y1="494" x2="461" y2="485"/></g>
+          <g fill="#C2410C"><circle cx="339" cy="130" r="6"/><circle cx="321" cy="180" r="6"/><circle cx="423" cy="110" r="6"/><circle cx="442" cy="170" r="6"/><circle cx="276" cy="285" r="6"/><circle cx="271" cy="380" r="6"/><circle cx="308" cy="490" r="6"/><circle cx="490" cy="280" r="6"/><circle cx="494" cy="385" r="6"/><circle cx="461" cy="485" r="6"/></g>
         </g>
-        <path class="onda" d="M0 160 Q 40 150 80 160 T 160 160 T 240 160 T 320 160 T 400 160 T 480 160 T 560 160 T 640 160 T 720 160 T 800 160 T 880 160 T 960 160" fill="none" stroke="#2563EB" stroke-width="3"/>
-        <g font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#0F172A">
-          <text x="24" y="100">Posição no Google</text>
-          <text x="534" y="100">Perfil no Maps</text>
-        </g>
-        <g font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="600" fill="#0F172A">
-          <text x="24" y="206">Avaliações e</text><text x="24" y="226">respostas</text>
-          <text x="24" y="326">Dados da clínica</text><text x="24" y="346">iguais em todo lugar</text>
-          <text x="24" y="450">Velocidade e</text><text x="24" y="470">indexação do site</text>
-          <text x="532" y="226">Páginas de</text><text x="532" y="246">tratamento</text>
-          <text x="532" y="346">O que a IA responde</text><text x="532" y="366">sobre a clínica</text>
-        </g>
+        <path class="onda" d="M0 210 Q 40 200 80 210 T 160 210 T 240 210 T 320 210 T 400 210 T 480 210 T 560 210 T 640 210 T 720 210 T 800 210 T 880 210 T 960 210" fill="none" stroke="#2563EB" stroke-width="3"/>
+        <g font-family="Inter, system-ui, sans-serif"><text x="24" y="108" font-size="13" font-weight="800" letter-spacing="1.2" fill="#C2410C">SEO</text><text x="24" y="128" font-size="16.5" font-weight="600" fill="#0F172A">Posição no Google</text><text x="24" y="163" font-size="13" font-weight="800" letter-spacing="1.2" fill="#C2410C">SEO LOCAL</text><text x="24" y="183" font-size="16.5" font-weight="600" fill="#0F172A">Perfil no Maps</text><text x="520" y="103" font-size="13" font-weight="800" letter-spacing="1.2" fill="#C2410C">GEO</text><text x="520" y="123" font-size="16.5" font-weight="600" fill="#0F172A">Recomendação no ChatGPT</text><text x="520" y="158" font-size="13" font-weight="800" letter-spacing="1.2" fill="#C2410C">AEO · AIO</text><text x="520" y="178" font-size="16.5" font-weight="600" fill="#0F172A">Resposta direta do Google</text><text x="24" y="273" font-size="13" font-weight="800" letter-spacing="1.2" fill="#C2410C">GEO</text><text x="24" y="293" font-size="16.5" font-weight="600" fill="#0F172A">Avaliações e menções</text><text x="24" y="368" font-size="13" font-weight="800" letter-spacing="1.2" fill="#C2410C">GEO</text><text x="24" y="388" font-size="16.5" font-weight="600" fill="#0F172A">Dados iguais em todo lugar</text><text x="24" y="478" font-size="13" font-weight="800" letter-spacing="1.2" fill="#C2410C">SEO TÉCNICO</text><text x="24" y="498" font-size="16.5" font-weight="600" fill="#0F172A">Velocidade e indexação</text><text x="530" y="273" font-size="13" font-weight="800" letter-spacing="1.2" fill="#C2410C">AEO</text><text x="530" y="293" font-size="16.5" font-weight="600" fill="#0F172A">Páginas de tratamento</text><text x="530" y="378" font-size="13" font-weight="800" letter-spacing="1.2" fill="#C2410C">GEO</text><text x="530" y="398" font-size="16.5" font-weight="600" fill="#0F172A">Reputação nas IAs</text><text x="530" y="478" font-size="13" font-weight="800" letter-spacing="1.2" fill="#C2410C">SXO</text><text x="530" y="498" font-size="16.5" font-weight="600" fill="#0F172A">Caminho até agendar</text></g>
       </svg>
+      <figcaption class="ice-leg"><b>SEO</b> ser encontrada · <b>AEO</b> ser a resposta direta · <b>GEO</b> ser recomendada pelas IAs · <b>AIO</b> aparecer nas respostas de IA do Google · <b>SXO</b> virar agendamento</figcaption>
     </figure>
   </div>
 </section>
